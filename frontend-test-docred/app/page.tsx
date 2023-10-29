@@ -5,6 +5,7 @@ import { useQuery } from "@apollo/client";
 import { queryCharacters } from "@/utils/queries";
 import { useState } from "react";
 import Paginator from "@/components/General/Paginator/Paginator";
+import Loader from "@/components/Loader/Loader";
 export default function Home() {
   const [page, setPage] = useState(1);
   const { data, loading } = useQuery<CharacterResponse>(queryCharacters, {
@@ -12,15 +13,7 @@ export default function Home() {
       page: page
     }
   });
-  if (loading)
-    return (
-      <div className="lds-ring">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    );
+  if (loading) return <Loader />;
   return (
     <div className={styles.homeContainer}>
       <div className={styles.cardContainer}>
