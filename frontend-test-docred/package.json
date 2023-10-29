@@ -9,17 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@apollo/client": "^3.8.6",
-    "graphql": "^16.8.1",
-    "next": "14.0.0",
-    "react": "^18",
-    "react-dom": "^18"
+    "@apollo/client": "^3.8.3",
+    "graphql": "^16.8.0",
+    "next": "13.4.13",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-jss": "^10.10.0"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/node": "20.3.1",
+    "@types/react": "18.2.12",
+    "@types/react-dom": "18.2.5",
     "eslint": "^8",
+    "encoding": "^0.1.13",
     "eslint-config-next": "14.0.0",
     "typescript": "^5"
   }
