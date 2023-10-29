@@ -1,0 +1,11 @@
+.container {
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  border-radius: .5rem;
+  height: 21rem;
+  cursor: pointer;
+  width: 14rem;
+  overflow: hidden;
+  background-color: red;
+}
