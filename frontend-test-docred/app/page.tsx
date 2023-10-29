@@ -1,8 +1,8 @@
 export default function Home() {
   return (
-    <main style={{ color: "red" }}>
+    <div>
       <h1>Cards</h1>
       <p>asdasdas</p>
-    </main>
+    </div>
   );
 }
