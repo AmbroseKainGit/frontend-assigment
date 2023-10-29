@@ -1,4 +1,5 @@
 "use client";
+import styles from "@/styles/Components/Paginator/Paginator.module.css";
 interface Props {
   page: number;
   setPage: (page: number) => void;
@@ -24,7 +25,7 @@ const Paginator = ({ page, setPage, totalData }: Props) => {
   };
 
   return (
-    <div className="paginator">
+    <div className={styles.paginator}>
       <button onClick={() => gotoPage(1)} disabled={page === 1}>
         First
       </button>
@@ -35,7 +36,7 @@ const Paginator = ({ page, setPage, totalData }: Props) => {
         <button
           key={p}
           onClick={() => gotoPage(p)}
-          className={p === page ? "active" : ""}
+          className={p === page ? styles.active : ""}
         >
           {p}
         </button>
