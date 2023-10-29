@@ -1,7 +1,9 @@
+"use client";
 import styles from "@/styles/Components/Card/Card.module.css";
 import Image from "next/image";
 import { transformDate } from "../../../utils/transformDate";
 import { AiFillPushpin } from "react-icons/ai";
+import { useRouter } from 'next/navigation'
 interface CardProps extends Character {}
 const InfoCard = ({
   name,
@@ -11,8 +13,9 @@ const InfoCard = ({
   created,
   location
 }: CardProps) => {
+  const router = useRouter();
   return (
-    <div className={styles.container}>
+    <div className={styles.container} onClick={() => router.push('/details')}>
       <Image
         src={image}
         width={180}

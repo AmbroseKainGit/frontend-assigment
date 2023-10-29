@@ -14,6 +14,9 @@ interface Character {
 
 interface CharacterResponse {
     characters: {
+        info: {
+            count: number;
+        }
         results: Character[];
     }
 }

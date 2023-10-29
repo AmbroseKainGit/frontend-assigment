@@ -4,13 +4,23 @@ import InfoCard from "@/components/Home/Card/InfoCard";
 import { useQuery } from "@apollo/client";
 import { queryCharacters } from "@/utils/queries";
 import { useState } from "react";
+import Paginator from "@/components/General/Paginator/Paginator";
 export default function Home() {
   const [page, setPage] = useState(1);
-  const { data } = useQuery<CharacterResponse>(queryCharacters, {
+  const { data, loading } = useQuery<CharacterResponse>(queryCharacters, {
     variables: {
       page: page
     }
   });
+  if (loading)
+    return (
+      <div className="lds-ring">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    );
   return (
     <div className={styles.homeContainer}>
       <div className={styles.cardContainer}>
@@ -18,6 +28,13 @@ export default function Home() {
           <InfoCard key={character.id} {...character} />
         ))}
       </div>
+      {data?.characters.info.count && (
+        <Paginator
+          page={page}
+          setPage={setPage}
+          totalData={data?.characters.info.count}
+        />
+      )}
     </div>
   );
 }
