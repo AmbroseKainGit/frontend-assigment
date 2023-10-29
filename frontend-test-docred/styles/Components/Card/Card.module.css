@@ -1,11 +1,32 @@
 .container {
-  border: 1px solid grey;
+  border: 1px solid #E0E0E0;
   display: flex;
   flex-direction: column;
   border-radius: .5rem;
   height: 21rem;
   cursor: pointer;
-  width: 14rem;
+  width: 17rem;
   overflow: hidden;
-  background-color: red;
+}
+.detailsContainer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-top: .5rem;
+}
+.badgeContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: .5rem;
+  gap: .5rem;
+}
+.badge {
+  background: #B3FED2;
+  color: black;
+  padding: .5rem;
+  border-radius: .5rem;
+  margin-bottom: .5rem;
+  font-size: .8rem;
+  width: fit-content;
+  height: fit-content;
 }

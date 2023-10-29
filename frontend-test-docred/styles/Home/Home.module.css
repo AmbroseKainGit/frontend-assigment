@@ -1,5 +1,25 @@
 .homeContainer {
   display: flex;
+  padding-left: 2rem;
+  padding-right: 2rem;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+}
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+@media screen and (max-width: 800px) {
+  .cardContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cardContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
