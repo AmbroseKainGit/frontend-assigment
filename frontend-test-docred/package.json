@@ -13,14 +13,15 @@
     "graphql": "^16.8.0",
     "next": "13.4.13",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.11.0"
   },
   "devDependencies": {
     "@types/node": "20.3.1",
     "@types/react": "18.2.12",
     "@types/react-dom": "18.2.5",
-    "eslint": "^8",
     "encoding": "^0.1.13",
+    "eslint": "^8",
     "eslint-config-next": "14.0.0",
     "typescript": "^5"
   }

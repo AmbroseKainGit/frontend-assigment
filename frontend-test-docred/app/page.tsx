@@ -2,7 +2,7 @@
 import styles from "@/styles/Home/Home.module.css";
 import InfoCard from "@/components/Home/Card/InfoCard";
 import { useQuery } from "@apollo/client";
-import { queryCharacters } from "@/utils/Queries";
+import { queryCharacters } from "@/utils/queries";
 import { useState } from "react";
 export default function Home() {
   const [page, setPage] = useState(1);

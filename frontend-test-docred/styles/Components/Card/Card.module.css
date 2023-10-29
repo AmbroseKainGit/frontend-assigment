@@ -8,8 +8,13 @@
   width: 17rem;
   overflow: hidden;
 }
+.container p {
+  font-size: .9rem;
+}
 .detailsContainer {
   display: flex;
+  position: relative;
+  height: inherit;
   flex-direction: column;
   padding-left: 1rem;
   padding-top: .5rem;
@@ -29,4 +34,10 @@
   font-size: .8rem;
   width: fit-content;
   height: fit-content;
+}
+.monthBadge{
+  color: #7A7981;
+  position: absolute;
+  bottom: 0;
+  right: 5px;
 }

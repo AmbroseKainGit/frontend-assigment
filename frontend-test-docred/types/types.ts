@@ -7,6 +7,9 @@ interface Character {
     type: string;
     created: string;
     species: string;
+    location: {
+        name: string;
+    };
 }
 
 interface CharacterResponse {

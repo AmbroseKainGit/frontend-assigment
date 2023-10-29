@@ -13,6 +13,10 @@ export const queryCharacters = gql`
         type
         gender
         species
+        created,
+        location {
+          name
+        }
       }
     }
   }
