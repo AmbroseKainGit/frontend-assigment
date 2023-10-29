@@ -1,4 +1,3 @@
-"use client";
 import type { Metadata } from "next";
 import "@/styles/index.css";
 import GraphQlProvider from "@/lib/Graphql/Provider";
