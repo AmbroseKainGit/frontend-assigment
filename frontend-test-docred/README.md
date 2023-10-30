@@ -1,24 +1,64 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frontend DocRed Test
+
+This is a Frontend Code Challenge for DocRed candidates.
+
+## Table of Contents
+
+<details open="open">
+  <summary>Menu</summary>
+  <ol>
+    <li><a href="#built-with">🛠️ Built With</a></li>
+    <li>
+      <a href="#getting-started">🚀 Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">📋 Prerequisites</a></li>
+        <li><a href="#installation">🔧 Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#learn-more">📦 Learn More</a></li>
+    <li><a href="#deploy-on-vercel">📄 Deploy on Vercel</a></li>
+  </ol>
+</details>
+
+## Built With
+
+* [Nextjs](https://nextjs.org)
+* [ReactJs](https://react.dev)
+* [GraphQL](https://www.apollographql.com/docs/react/)
 
 ## Getting Started
 
-First, run the development server:
+These instructions will allow you to obtain a working copy of the project on your local machine for development and testing purposes.
 
-```bash
-npm run dev
-# or
+### Prerequisites
+
+* [NodeJS >= v18.17](https://nodejs.org/en/)
+
+### Installation
+
+Clone the repository.
+
+```sh
+git clone https://github.com/AmbroseKainGit/frontend-assigment
+```
+
+Install yarn packages.
+
+```sh
+yarn install
+```
+
+To run the project locally run.
+```sh
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+You can also see the project already deployed on vercel in the next url:
+```
+https://frontend-assigment-sigma.vercel.app
+```
 
 ## Learn More
 
