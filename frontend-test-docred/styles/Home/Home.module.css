@@ -7,6 +7,7 @@
   flex-wrap: wrap;
   flex-direction: column;
 }
+
 .cardContainer {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -14,10 +15,10 @@
 }
 
 @media screen and (max-width: 1400px) {
-    .cardContainer {
-      grid-template-columns: repeat(5, 1fr);
-    }
+  .cardContainer {
+    grid-template-columns: repeat(5, 1fr);
   }
+}
 
 @media screen and (max-width: 1000px) {
   .cardContainer {

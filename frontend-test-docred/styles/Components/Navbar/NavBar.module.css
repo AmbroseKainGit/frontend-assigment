@@ -8,4 +8,95 @@
   justify-content: center;
   align-items: center;
   z-index: 2;
+  justify-content: space-evenly;
+}
+.navbarBrand {
+  width: auto;
+  max-height: 40px;
+  cursor: pointer;
+}
+.navbarCollapse {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  font-size: 12px;
+}
+.navbarItem {
+  margin: 0px 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.navbarItem svg{
+  margin-right: 5px;
+  font-size: 15px;
+}
+.navbarEnd {
+  color: #fff;
+  font-size: 22px;
+}
+.navbarEnd svg {
+  margin-left: 10px;
+  cursor: pointer;
+}
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.burger.active {
+  display: flex;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+}
+
+.burgerContainer {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  position: fixed;
+  top: 50px;
+  right: 0px;
+  background: #0E0A31;
+  color: white;
+  gap: .4rem;
+  padding-bottom: 1rem;
+  transition: all 0.3s;
+}
+
+@media (max-width: 768px) {
+  .navbarCollapse {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    background: #0E0A31;
+    width: 100%;
+    top: 5rem;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+  }
+
+  .burgerContainer.active {
+    display: flex;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .burger svg {
+    color: white;
+    height: 2rem;
+    width: 2rem;
+  }
 }

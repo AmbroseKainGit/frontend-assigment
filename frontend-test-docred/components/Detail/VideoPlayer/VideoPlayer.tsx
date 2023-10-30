@@ -5,7 +5,7 @@ interface Props {
 }
 function VideoPlayer({ videoUrl }: Props) {
   return (
-    <ReactPlayer url={videoUrl} controls={true} width="100%" height="100%" />
+    <ReactPlayer url={videoUrl} controls={true} width="50%" height="100%" />
   );
 }
 
