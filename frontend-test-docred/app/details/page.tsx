@@ -1,36 +1,45 @@
 "use client";
 import VideoPlayer from "@/components/Detail/VideoPlayer/VideoPlayer";
 import styles from "@/styles/Detail/Detail.module.css";
+import { useRef } from "react";
 export default function Details() {
+  const playerRef = useRef(null);
+  const handleSeek = (time: number) => {
+    if (playerRef.current) {
+      // @ts-ignore
+      playerRef.current.seekTo(time, "seconds");
+    }
+  };
   return (
     <div className={styles.detailContainer}>
       <div className={styles.videoContainer}>
-        <VideoPlayer videoUrl="https://www.youtube.com/watch?v=ZVnjOPwW4ZA" />
+        <div style={{ maxWidth: 800 }}>
+          <VideoPlayer
+            playerRef={playerRef}
+            videoUrl="https://www.youtube.com/watch?v=ZVnjOPwW4ZA"
+          />
+        </div>
+
         <div className={styles.chapters}>
           <div className={styles.chapter}>
-            <p>
-              <span>Nutricion y estilo de vida en pediatria</span> Reproducir
-            </p>
+            <span>Nextjs Fundamentals</span>
+            <span onClick={() => handleSeek(200)}>Go To</span>
           </div>
           <div className={styles.chapter}>
-            <p>
-              <span>Nutricion y estilo de vida en pediatria</span> Reproducir
-            </p>
+            <span>Creating Your First Nextjs Project</span>
+            <span onClick={() => handleSeek(483)}>Go To</span>
           </div>
           <div className={styles.chapter}>
-            <p>
-              <span>Nutricion y estilo de vida en pediatria</span> Reproducir
-            </p>
+            <span>Data Fetching</span>
+            <span onClick={() => handleSeek(1680)}>Go To</span>
           </div>
           <div className={styles.chapter}>
-            <p>
-              <span>Nutricion y estilo de vida en pediatria</span> Reproducir
-            </p>
+            <span>Static And Dynamic Rendering</span>
+            <span onClick={() => handleSeek(2165)}>Go To</span>
           </div>
           <div className={styles.chapter}>
-            <p>
-              <span>Nutricion y estilo de vida en pediatria</span> Reproducir
-            </p>
+            <span>Tailwing CSS</span>
+            <span onClick={() => handleSeek(2840)}>Go To</span>
           </div>
         </div>
       </div>
