@@ -9,12 +9,12 @@ const Footer = ({}) => {
   return (
     <footer className={styles.container}>
         <span> DocRed {year} Todos los derechos reservados</span>
-        <div className={styles.iconContainer}>
+        {/* <div className={styles.iconContainer}>
           <BsFacebook />
           <AiFillTwitterCircle />
           <AiOutlineInstagram />
           <BiLogoLinkedin />
-        </div>
+        </div> */}
     </footer>
   );
 };
