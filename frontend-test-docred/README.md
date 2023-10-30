@@ -42,6 +42,12 @@ Clone the repository.
 git clone https://github.com/AmbroseKainGit/frontend-assigment
 ```
 
+Go in the frontend-test-docred folder
+
+```sh
+cd frontend-test-docred
+```
+
 Install yarn packages.
 
 ```sh
