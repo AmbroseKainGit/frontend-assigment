@@ -1,9 +1,6 @@
 .detailContainer {
   display: flex;
-  width: 100%;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  justify-content: center;
+  width: 70%;
   flex-direction: column;
 }
 .videoPlayer {
@@ -39,6 +36,9 @@
 }
 
 @media screen and (max-width: 750px) {
+  .detailContainer {
+    width: 90%;
+  }
   .videoContainer {
       flex-direction: column;
   }

@@ -60,15 +60,15 @@
 .burgerContainer {
   display: none;
   flex-direction: column;
+  right: 0px;
   width: 100%;
   position: fixed;
   top: 50px;
-  right: 0px;
+  transition: all 0.3s;
   background: #0E0A31;
   color: white;
   gap: .4rem;
   padding-bottom: 1rem;
-  transition: all 0.3s;
 }
 
 @media (max-width: 768px) {
