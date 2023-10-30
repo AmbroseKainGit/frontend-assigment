@@ -3,8 +3,8 @@ import styles from "@/styles/Components/Card/Card.module.css";
 import Image from "next/image";
 import { transformDate } from "../../../utils/transformDate";
 import { AiFillPushpin } from "react-icons/ai";
-import { useRouter } from 'next/navigation'
-interface CardProps extends Character {}
+import { useRouter } from "next/navigation";
+import { Character } from "@/types/types";
 const InfoCard = ({
   name,
   image,
@@ -12,10 +12,10 @@ const InfoCard = ({
   status,
   created,
   location
-}: CardProps) => {
+}: Character) => {
   const router = useRouter();
   return (
-    <div className={styles.container} onClick={() => router.push('/details')}>
+    <div className={styles.container} onClick={() => router.push("/details")}>
       <Image
         src={image}
         width={180}

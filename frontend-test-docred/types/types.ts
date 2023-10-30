@@ -6,7 +6,7 @@ export enum Chapters {
     TAILWIND = 'Tailwing CSS',
     DEFAULT = 'NextJs Tutorial'
 }
-interface Character {
+export interface Character {
     id: string;
     name: string;
     status: string;
@@ -20,7 +20,7 @@ interface Character {
     };
 }
 
-interface CharacterResponse {
+export interface CharacterResponse {
     characters: {
         info: {
             count: number;

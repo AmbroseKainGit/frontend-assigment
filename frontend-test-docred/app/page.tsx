@@ -6,6 +6,7 @@ import { queryCharacters } from "@/utils/queries";
 import { useState } from "react";
 import Paginator from "@/components/General/Paginator/Paginator";
 import Loader from "@/components/Loader/Loader";
+import { CharacterResponse } from "@/types/types";
 export default function Home() {
   const [page, setPage] = useState(1);
   const { data, loading } = useQuery<CharacterResponse>(queryCharacters, {

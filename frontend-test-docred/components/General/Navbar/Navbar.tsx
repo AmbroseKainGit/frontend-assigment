@@ -13,10 +13,11 @@ import { FaTimes } from "react-icons/fa";
 import { IoNotificationsOutline } from "react-icons/io5";
 import Image from "next/image";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  const router = useRouter();
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
@@ -27,6 +28,7 @@ const Navbar = () => {
       </div>
       <div className={styles.navbarBrand}>
         <Image
+          onClick={() => router.push("/")}
           src={"/DocRedLogo.webp"}
           width={113}
           height={21}
@@ -57,7 +59,9 @@ const Navbar = () => {
         </div>
       </div>
       <div
-        className={`${styles.burgerContainer} ${isOpen === true && styles.active}`}
+        className={`${styles.burgerContainer} ${
+          isOpen === true && styles.active
+        }`}
       >
         <div className={styles.navbarItem}>
           <FaLaptopMedical />
